@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Configure Menu - Sandboxie Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configure Menu";
+        var mkdocs_page_input_path = "Content\\ConfigureMenu.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Sandboxie Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Sandboxie documentation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Content</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AdvancedTopics/">Advanced Topics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AlertFolder/">Alert Folder</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AlertProcess/">Alert Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AllPages/">All Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AppearanceSettings/">Appearance Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ApplicationsSettings/">Applications Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AutoDelete/">Auto Delete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AutoExec/">Auto Exec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AutoRecover/">Auto Recover</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AutoRecoverIgnore/">Auto Recover Ignore</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockDrivers/">Block Drivers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockFakeInput/">Block Fake Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockNetParam/">Block Net Param</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockPassword/">Block Password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockPort/">Block Port</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockSysParam/">Block Sys Param</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BlockWinHooks/">Block Win Hooks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BorderColor/">Border Color</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BoxNameTitle/">Box Name Title</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BoxRootFolder/">Box Root Folder</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BreakoutDocument/">Breakout Document</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BreakoutFolder/">Breakout Folder</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BreakoutProcess/">Breakout Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ByteOrderMark/">Byte Order Mark</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ClosedClsid/">Closed Clsid</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ClosedFilePath/">Closed File Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ClosedIpcPath/">Closed Ipc Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ClosedKeyPath/">Closed Key Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ClosedRT/">Closed RT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CodeInjection/">Code Injection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CommonFeatureRequests/">Common Feature Requests</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ConfigLevel/">Config Level</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ConfigurationProtection/">Configuration Protection</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Configure Menu</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#program-alerts">Program Alerts</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#windows-shell-integration">Windows Shell Integration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#software-compatibility">Software Compatibility</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#forget-hidden-messages">Forget Hidden Messages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lock-configuration">Lock Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#edit-configuration">Edit Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reload-configuration">Reload Configuration</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CopyLimitKb/">Copy Limit Kb</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CopyLimitSilent/">Copy Limit Silent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Delete-V2/">Delete V2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DeleteCommand/">Delete Command</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DeleteSandbox/">Delete Sandbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DeleteSettings/">Delete Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DeprecatedSandboxieIniSettings/">Deprecated/Obsolete/Removed Sandboxie Ini Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Description/">Description</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DetectingKeyLoggers/">Detecting Key Loggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DisableRTBlacklist/">Disable RT Blacklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DropAdminRights/">Drop Admin Rights</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EditAdminOnly/">Edit Admin Only</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EditPassword/">Edit Password</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../EmailProtection/">Email Protection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Enabled/">Enabled</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExpandableVariables/">Expandable Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ExternalTutorials/">External Tutorials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FAQEmail/">FAQ Email</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FAQVirus/">FAQ Virus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FeatureComparison/">Feature Comparison (to be updated)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FileMenu/">File Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FileMigrationSettings/">File Migration Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FileRootPath/">File Root Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FilesAndFoldersView/">Files And Folders View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FirefoxTips/">Firefox Tips</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ForceDisableAdminOnly/">Force Disable Admin Only</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ForceDisableSeconds/">Force Disable Seconds</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ForceFolder/">Force Folder</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ForceProcess/">Force Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FrequentlyAskedQuestions/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FrontPageAnimation/">FrontPageAnimation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GeneralTips/">General Tips</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GettingStarted/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GettingStartedPartFive/">Getting Started Part Five</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GettingStartedPartFour/">Getting Started Part Four</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GettingStartedPartSix/">Getting Started Part Six</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GettingStartedPartThree/">Getting Started Part Three</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GettingStartedPartTwo/">Getting Started Part Two</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HelpMenu/">Help Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HelpTopics/">Help Topics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HowToUseWinDbg/">How To Use Win Dbg</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../HowitWorks/">How it Works</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ImmediateRecovery/">Immediate Recovery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../InjectDll/">Inject Dll</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../InjectDll64/">Inject Dll 64</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../InternetExplorerTips/">Internet Explorer Tips</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../IpcRootPath/">Ipc Root Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../IsolationMechanism/">Isolation Mechanism</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../KeyRootPath/">Key Root Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../KnownConflicts/">Known Conflicts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LeaderProcess/">Leader Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LingerProcess/">Linger Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MessagesFromSandboxie/">Messages From Sandboxie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MonitorAdminOnly/">Monitor Admin Only</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NeverDelete/">Never Delete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NoRenameWinClass/">No Rename Win Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalFilePath/">Normal File Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalIpcPath/">Normal Ipc Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NormalKeyPath/">Normal Key Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NotifyDirectDiskAccess/">Notify Direct Disk Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NotifyInternetAccessDenied/">Notify Internet Access Denied</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NotifyProcessAccessDenied/">Notify Process Access Denied</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NotifyStartRunAccessDenied/">Notify Start Run Access Denied</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../NtStatusCodes/">Nt Status Codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenClsid/">Open Clsid</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenConfPath/">Open Conf Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenCredentials/">Open Credentials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenFilePath/">Open File Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenIpcPath/">Open Ipc Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenKeyPath/">Open Key Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenPipePath/">Open Pipe Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenProtectedStorage/">Open Protected Storage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenWinClass/">Open Win Class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PaperAnalogy/">Paper Analogy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PlusMigrationGuide/">Sandboxie-Plus Migration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PopupMessageLog/">Popup Message Log</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PortableSandbox/">Portable Sandbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PrivacyConcerns/">Privacy Concerns</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../PrivacyMode/">Privacy Mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProcessLimit/">Process Limit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProcessLimit1/">Process Limit 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProcessLimit2/">Process Limit 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProgramNamePrefix/">Program Name Prefix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProgramSettings/">Program Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProgramStartSettings/">Program Start Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProgramStopSettings/">Program Stop Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProgramsView/">Programs View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ProtectedStorage/">Protected Storage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Questions/">Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../QuickRecovery/">Quick Recovery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ransomware/">Ransomware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReadFilePath/">Read File Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReadIpcPath/">Read Ipc Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ReadKeyPath/">Read Key Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../RecoverFolder/">Recover Folder</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../RecoverySettings/">Recovery Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ResourceAccess/">Resource Access</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ResourceAccessMonitor/">Resource Access Monitor (for Sandboxie Classic)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ResourceAccessSettings/">Resource Access Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../RestrictionsSettings/">Restrictions Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1101/">SBIE1101</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1102/">SBIE1102</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1103/">SBIE1103</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1104/">SBIE1104</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1105/">SBIE1105</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1106/">SBIE1106</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1108/">SBIE1108</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1109/">SBIE1109</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1110/">SBIE1110</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1111/">SBIE1111</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1112/">SBIE1112</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1113/">SBIE1113</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1114/">SBIE1114</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1116/">SBIE1116</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1119/">SBIE1119</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1120/">SBIE1120</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1121/">SBIE1121</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1122/">SBIE1122</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1151/">SBIE1151</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1152/">SBIE1152</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1153/">SBIE1153</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1201/">SBIE1201</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1202/">SBIE1202</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1203/">SBIE1203</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1204/">SBIE1204</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1211/">SBIE1211</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1212/">SBIE1212</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1213/">SBIE1213</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1214/">SBIE1214</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1215/">SBIE1215</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1216/">SBIE1216</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1222/">SBIE1222</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1223/">SBIE1223</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1224/">SBIE1224</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1241/">SBIE1241</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1242/">SBIE1242</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1301/">SBIE1301</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1303/">SBIE1303</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1304/">SBIE1304</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1306/">SBIE1306</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1307/">SBIE1307</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1308/">SBIE1308</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1309/">SBIE1309</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1310/">SBIE1310</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1311/">SBIE1311</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1312/">SBIE1312</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1313/">SBIE1313</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1314/">SBIE1314</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1401/">SBIE1401</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1402/">SBIE1402</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1403/">SBIE1403</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1404/">SBIE1404</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1405/">SBIE1405</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1406/">SBIE1406</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1408/">SBIE1408</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1409/">SBIE1409</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1410/">SBIE1410</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1411/">SBIE1411</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE1412/">SBIE1412</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2102/">SBIE2102</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2103/">SBIE2103</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2104/">SBIE2104</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2108/">SBIE2108</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2111/">SBIE2111</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2191/">SBIE2191</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2192/">SBIE2192</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2193/">SBIE2193</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2202/">SBIE2202</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2203/">SBIE2203</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2204/">SBIE2204</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2205/">SBIE2205</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2206/">SBIE2206</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2207/">SBIE2207</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2208/">SBIE2208</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2209/">SBIE2209</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2210/">SBIE2210</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2211/">SBIE2211</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2212/">SBIE2212</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2213/">SBIE2213</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2214/">SBIE2214</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2217/">SBIE2217</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2218/">SBIE2218</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2219/">SBIE2219</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2220/">SBIE2220</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2221/">SBIE2221</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2222/">SBIE2222</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2223/">SBIE2223</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2303/">SBIE2303</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2304/">SBIE2304</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2305/">SBIE2305</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2306/">SBIE2306</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2307/">SBIE2307</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2308/">SBIE2308</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2309/">SBIE2309</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2310/">SBIE2310</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2311/">SBIE2311</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2312/">SBIE2312</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2313/">SBIE2313</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2314/">SBIE2314</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2315/">SBIE2315</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2316/">SBIE2316</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2317/">SBIE2317</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2318/">SBIE2318</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2321/">SBIE2321</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2322/">SBIE2322</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2323/">SBIE2323</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2326/">SBIE2326</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2327/">SBIE2327</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2331/">SBIE2331</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2332/">SBIE2332</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE2334/">SBIE2334</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE3207/">SBIE3207</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE3208/">SBIE3208</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE3209/">SBIE3209</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9101/">SBIE9101</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9153/">SBIE9153</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9154/">SBIE9154</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9156/">SBIE9156</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9201/">SBIE9201</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9202/">SBIE9202</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9203/">SBIE9203</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9204/">SBIE9204</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9205/">SBIE9205</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9206/">SBIE9206</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9207/">SBIE9207</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9208/">SBIE9208</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9251/">SBIE9251</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9252/">SBIE9252</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9253/">SBIE9253</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9302/">SBIE9302</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9304/">SBIE9304</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIE9305/">SBIE9305</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIEDLLAPI/">SBIE DLL API</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SBIEMessages/">SBIE Messages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SandboxHierarchy/">Sandbox Hierarchy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SandboxMenu/">Sandbox Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SandboxSettings/">Sandbox Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SandboxieControl/">Sandboxie Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SandboxieIni/">Sandboxie Ini</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SandboxieTrace/">Sandboxie Trace</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SecureDeleteSandbox/">Secure Delete Sandbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ServicePrograms/">Service Programs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ShellFolders/">Shell Folders</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../StartCommandLine/">Start Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SystemEventLog/">System Event Log</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TechnicalAspects/">Technical Aspects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TestEmailConfiguration/">Test Email Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TokenMagic/">SandboxieDrv use of undocumented kernel exports to do its token magic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TrayIconMenu/">Tray Icon Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UsageTips/">Usage Tips</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UserAccountsSettings/">User Accounts Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ViewMenu/">View Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Windows8/">Windows 8</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../WindowsXPMode/">Windows XP Mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../WriteFilePath/">Write File Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../WriteKeyPath/">Write Key Path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../YesOrNoSettings/">Yes Or No Settings</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">PlusContent</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/BoxSnapshots/">Box Snapshots (for Sandboxie Plus)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/DNSFilter/">DNS Filter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/EncryptedSandboxes/">EncryptedSandboxes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/Plus-Features/">Plus Features</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/ProxySupport/">Proxy Support</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/RamDiskSandboxes/">RamDiskSandboxes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/RuleSpecificity/">Rule Specificity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/Sandboxie-Insider/">Sandboxie Insider</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/Sandboxie-Live/">Sandboxie Live</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/TraceLog/">Trace logging (for Sandboxie Plus)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/USBSandboxing/">USB Sandboxing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/WFPSupport/">WFP (Windows Filtering Platform) support</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/compartment-mode/">Compartment Mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/privacy-mode/">Privacy Mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../PlusContent/security-mode/">Security mode</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Sandboxie Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Content</li>
+      <li class="breadcrumb-item active">Configure Menu</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="configure-menu">Configure Menu</h1>
+<p><a href="../SandboxieControl/">Sandboxie Control</a> &gt; Configure Menu</p>
+<p><img alt="" src="../../Media/ConfigureMenu.png" /></p>
+<hr />
+<h3 id="program-alerts">Program Alerts</h3>
+<p>The <em>Program Alerts</em> command opens the following window in which you can configure Sandboxie to issue message <a href="../SBIE1301/">SBIE1301</a> whenever specific programs start outside any sandbox.</p>
+<p><img alt="" src="../../Media/AlertPrograms.png" /></p>
+<ul>
+<li>
+<p>Use the <em>Add Program</em> button to open the Program Groups window and select a program to add.</p>
+</li>
+<li>
+<p>For example, <em>iexplore.exe</em> for Internet Explorer, or <em>firefox.exe</em> for Firefox.</p>
+</li>
+<li>Alternatively, Internet Explorer is typically found in the folder <em>C:\Program Files\Internet Explorer</em>.</li>
+<li>Mozilla Firefox is typically found in the folder <em>C:\Program Files\Mozilla Firefox</em>.</li>
+</ul>
+<p>If the desired program is already running sandboxed, you can also use <a href="../ProgramSettings/#page-1">Program Settings</a> to specify that message <a href="../SBIE1301/">SBIE1301</a> should be issued for the program.</p>
+<p>Related <a href="../SandboxieIni/">Sandboxie Ini</a> setting: <a href="../AlertProcess/">AlertProcess</a>.</p>
+<hr />
+<h3 id="windows-shell-integration">Windows Shell Integration</h3>
+<p>The <em>Windows Shell Integration</em> command opens a window which controls how <a href="../SandboxieControl/">Sandboxie Control</a> integrates into and associates itself with your Windows desktop. It can also be used to create desktop shortcut icons to run your programs sandboxed. By default, all settings in the window are enabled.</p>
+<p><img alt="" src="../../Media/ShellIntegration.png" /></p>
+<ul>
+<li>
+<p>The top frame indicates when <a href="../SandboxieControl/">Sandboxie Control</a> should start:</p>
+</li>
+<li>
+<p><em>When Windows starts</em> will integrate <a href="../SandboxieControl/">Sandboxie Control</a> into the startup sequence</p>
+</li>
+<li>
+<p><em>When a sandboxed program starts</em> will start <a href="../SandboxieControl/">Sandboxie Control</a> (if it is not already running) when a sandboxed program starts. This applies to programs that are started explicitly through Sandboxie, such as when using the <a href="../SandboxMenu/#sandbox-menu">Run Sandboxed</a> commands, or shortcuts created using <em>Add Shortcut Icons</em> (see below). It also applies to <a href="../ProgramStartSettings/#forced-programs">forced programs</a> and <a href="../ProgramStartSettings/#forced-folders">forced folders</a>.</p>
+</li>
+<li>
+<p>The middle frame deals with shortcut icons:</p>
+</li>
+<li>
+<p><em>Add desktop shortcut for starting Web browser under Sandboxie</em> creates (when checked) or removes (when cleared) the <em>Sandboxed Web Browser</em> shortcut icon on your desktop.</p>
+</li>
+<li>
+<p><em>Add Quick Launch shortcut for starting Web browser under Sandboxie</em> creates (when checked) or removes (when cleared) the <em>Sandboxed Web Browser</em> shortcut icons on your Quick Launch bar. The Quick Launch bar is typically adjacent to the Windows Start menu button.</p>
+</li>
+<li>
+<p><em>Add Shortcut Icons</em> creates a shortcut icon on your desktop to run a specific program under the supervision of Sandboxie. The program is selected from the Sandboxie Start menu. Note that if any programs were installed into the sandbox, the Sandboxie Start menu will include the shortcuts created during the installation, and they can be used to create desktop shortcuts. To remove desktop shortcuts created using <em>Add Shortcut Icons</em>, simply delete them from your desktop.</p>
+</li>
+<li>
+<p>The bottom frame controls "right-click" shell integration:</p>
+</li>
+<li>
+<p><em>Add right-click action "Run Sandboxed" to files and folders</em> enables (when checked) or removes (when cleared) the <em>Run Sandboxed</em> option which appears when you click the right mouse button on a file or folder on your desktop or in Windows Explorer.</p>
+</li>
+<li>
+<p><em>Add sandboxes as targets for "Send To" action</em> enables (when checked) or removes (when cleared) the available sandboxes as an option in the <em>Send To</em> action that appears when you click the right mouse button on a file or folder on your desktop or in Windows Explorer. If this setting is enabled, <a href="../SandboxieControl/">Sandboxie Control</a> will automatically update the list of <em>Send To</em> targets whenever sandboxes are <a href="../SandboxMenu/#create-new-sandbox">created</a> or removed.</p>
+</li>
+</ul>
+<hr />
+<h3 id="software-compatibility">Software Compatibility</h3>
+<p>The <em>Software Compatibility</em> command opens a window with a list of available compatibility templates.</p>
+<hr />
+<h3 id="forget-hidden-messages">Forget Hidden Messages</h3>
+<p>Whenever <a href="../SandboxieControl/">Sandboxie Control</a> displays one or more <a href="../SBIEMessages/">SBIE Messages</a>, you have the option to hide future instances of the message. This is accomplished by highlighting and clicking the <em>Hide</em> command:</p>
+<p><img alt="" src="../../Media/MessagesFromSandboxie.png" /></p>
+<p>Note that messages are filtered by message code alone. For instance, the picture above shows message <a href="../SBIE1304/">SBIE1304</a> with information detail <em>osk.exe</em>. Hiding that message will hide all future instances of message SBIE1304, regardless of the information detail.</p>
+<p>The <em>Forget Hidden Messages</em> command tells Sandboxie to stop filtering messages, and resume the display of all SBIExxxx messages that occurs.</p>
+<hr />
+<h3 id="tips">Tips</h3>
+<p>When <a href="../SandboxieControl/">Sandboxie Control</a> displays a warning or notification message box, it usually includes a checkbox labeled <em>In the future, don't show this message.</em> If you mark the checkbox, that particular message will not be displayed again.</p>
+<p>The <em>Show All Tips</em> command tells Sandboxie to disregard any such use of the checkboxes, and resume displaying of all warnings and notifications.</p>
+<p>The <em>Hide All Tips</em> command tells Sandboxie to consider all checkboxes as checked, and not display any warnings or notifications.</p>
+<hr />
+<h3 id="lock-configuration">Lock Configuration</h3>
+<p><img alt="" src="../../Media/LockConfiguration.png" /></p>
+<p>Please see <a href="../ConfigurationProtection/">Configuration Protection</a>.</p>
+<hr />
+<h3 id="edit-configuration">Edit Configuration</h3>
+<p>Opens the system text editor (typically, <em>Windows Notepad</em>) to edit the <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file. The <em>Reload Configuration</em> command will be automatically invoked when the editor is closed.</p>
+<p>Note: Manual editing of Sandboxie.ini is not recommended. You are advised to use <a href="../SandboxSettings/">Sandbox Settings</a> and other configuration windows in <a href="../SandboxieControl/">Sandboxie Control</a> to make any changes to the configuration of Sandboxie.</p>
+<p>Note: The <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file is usually located in the <em>Windows</em> folder, and cannot be modified by non-privileged user accounts. If you use Windows with User Account Control (UAC), you may have to elevate to an Administrator account before you can modify Sandboxie.ini.</p>
+<hr />
+<h3 id="reload-configuration">Reload Configuration</h3>
+<p>Forces Sandboxie to reload its configuration from the <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file.</p>
+<hr />
+<p>Go to <a href="../SandboxieControl/#menus">Sandboxie Control</a>, <a href="../HelpTopics/">Help Topics</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ConfigurationProtection/" class="btn btn-neutral float-left" title="Configuration Protection"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CopyLimitKb/" class="btn btn-neutral float-right" title="Copy Limit Kb">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ConfigurationProtection/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CopyLimitKb/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
