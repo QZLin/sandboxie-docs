@@ -1,0 +1,5 @@
+site_name: Sandboxie Documentation
+theme:
+  name: readthedocs
+  highlightjs: true
+  # hljs_languages:
