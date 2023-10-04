@@ -1,4 +1,6 @@
 site_name: Sandboxie Documentation
 theme:
   name: readthedocs
+  logo: https://avatars.githubusercontent.com/u/63755826?size=64
   highlightjs: true
+  custom_dir: theme_override
