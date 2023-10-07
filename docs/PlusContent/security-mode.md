@@ -1,1 +1,0 @@
-Security Hardened Mode
