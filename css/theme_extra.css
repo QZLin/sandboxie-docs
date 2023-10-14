@@ -1,40 +1,3 @@
-/* Suggestion from @isaak654 */
-.rst-content .toctree-wrapper>p.caption,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-legend {
-    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-}
-
-.wy-side-nav-search {
-    color: #65309a
-}
-
-.wy-menu-vertical header {
-    color: #ab996c;
-}
-
-.rst-content pre code {
-    font-size: 13.5px;
-}
-
-.rst-content code,
-.rst-content tt,
-code {
-    font-size: 88%;
-}
-
-.rst-content blockquote {
-    padding: 0 1rem;
-    margin-left: 0;
-    color: #819198;
-    border-left: 0.3rem solid #dce6f0;
-}
-
 /*
  * Wrap inline code samples otherwise they shoot of the side and
  * can't be read at all.
@@ -231,4 +194,41 @@ th {
 .rst-current-version span {
     flex: 1;
     text-align: center;
+}
+
+/* Suggestion from @isaak654 */
+.rst-content .toctree-wrapper>p.caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+.wy-side-nav-search {
+    color: #65309a
+}
+
+.wy-menu-vertical header {
+    color: #ab996c;
+}
+
+.rst-content pre code {
+    font-size: 13.5px;
+}
+
+.rst-content code,
+.rst-content tt,
+code {
+    font-size: 88%;
+}
+
+.rst-content blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 0.3rem solid #dce6f0;
 }
