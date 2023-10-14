@@ -1,3 +1,40 @@
+/* Suggestion from @isaak654 */
+.rst-content .toctree-wrapper>p.caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+.wy-side-nav-search {
+    color: #65309a
+}
+
+.wy-menu-vertical header {
+    color: #ab996c;
+}
+
+.rst-content pre code {
+    font-size: 13.5px;
+}
+
+.rst-content code,
+.rst-content tt,
+code {
+    font-size: 88%;
+}
+
+.rst-content blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 0.3rem solid #dce6f0;
+}
+
 /*
  * Wrap inline code samples otherwise they shoot of the side and
  * can't be read at all.
@@ -50,9 +87,11 @@
 a code {
     color: #2980B9;
 }
+
 a:hover code {
     color: #3091d1;
 }
+
 a:visited code {
     color: #9B59B6;
 }
@@ -64,7 +103,8 @@ a:visited code {
  *
  * https://github.com/mkdocs/mkdocs/issues/411
  */
-pre .cs, pre .c {
+pre .cs,
+pre .c {
     font-weight: inherit;
     font-style: inherit;
 }
@@ -103,7 +143,8 @@ pre .cs, pre .c {
 form .search-query {
     width: 100%;
     border-radius: 50px;
-    padding: 6px 12px;  /* csslint allow: box-model */
+    padding: 6px 12px;
+    /* csslint allow: box-model */
     border-color: #D1D4D5;
 }
 
@@ -112,7 +153,7 @@ form .search-query {
  *
  * https://github.com/mkdocs/mkdocs/issues/656
  */
- .rst-content .admonition code {
+.rst-content .admonition code {
     color: #404040;
     border: 1px solid #c7c9cb;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -134,8 +175,10 @@ form .search-query {
     border: none;
 }
 
-td, th {
-    border: 1px solid #e1e4e5 !important; /* csslint allow: important */
+td,
+th {
+    border: 1px solid #e1e4e5 !important;
+    /* csslint allow: important */
     border-collapse: collapse;
 }
 
@@ -151,7 +194,7 @@ td, th {
  *
  * https://github.com/mkdocs/mkdocs/issues/2012
  */
- .wy-nav-side {
+.wy-nav-side {
     padding-bottom: 40px;
 }
 
