@@ -107,33 +107,147 @@
                 <li class="toctree-l2"><a class="reference internal" href="../SBIEMessages/">SBIE Messages</a>
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">SBIE DLL API</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#enumerate-sandbox-names">Enumerate Sandbox Names</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#query-sandbox-paths-by-sandbox-name">Query Sandbox Paths by Sandbox Name</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#query-sandbox-paths-by-process-id">Query Sandbox Paths by Process ID</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enumerate-running-processes">Enumerate Running Processes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#query-process-information">Query Process Information</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#terminate-a-single-sandboxed-process">Terminate a Single Sandboxed Process</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#terminate-all-sandboxed-processes">Terminate All Sandboxed Processes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#query-configuration-from-sandboxieini">Query Configuration from Sandboxie.ini</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#update-configuration-in-sandboxieini">Update Configuration in Sandboxie.ini</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#reload-configuration-from-sandboxieini">Reload Configuration from Sandboxie.ini</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#hook-a-user-mode-entrypoint">Hook a User-Mode Entrypoint</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#register-for-dll-loadunload-callbacks">Register for DLL Load/Unload Callbacks</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#get-sandboxie-home-folder">Get Sandboxie Home Folder</a>
-    </li>
+    <ul class="current"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        
+            
+        
+            <li class="nav-item" data-level="1"><a href="#sbie-dll-api" class="nav-link">SBIE DLL API</a>
+              <ul class="nav flex-column">
+                
+        
+            <li class="nav-item" data-level="3"><a href="#enumerate-sandbox-names" class="nav-link">Enumerate Sandbox Names</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#query-sandbox-paths-by-sandbox-name" class="nav-link">Query Sandbox Paths by Sandbox Name</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#query-sandbox-paths-by-process-id" class="nav-link">Query Sandbox Paths by Process ID</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#enumerate-running-processes" class="nav-link">Enumerate Running Processes</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#query-process-information" class="nav-link">Query Process Information</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#terminate-a-single-sandboxed-process" class="nav-link">Terminate a Single Sandboxed Process</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#terminate-all-sandboxed-processes" class="nav-link">Terminate All Sandboxed Processes</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#query-configuration-from-sandboxieini" class="nav-link">Query Configuration from Sandboxie.ini</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#update-configuration-in-sandboxieini" class="nav-link">Update Configuration in Sandboxie.ini</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#reload-configuration-from-sandboxieini" class="nav-link">Reload Configuration from Sandboxie.ini</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#hook-a-user-mode-entrypoint" class="nav-link">Hook a User-Mode Entrypoint</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#register-for-dll-loadunload-callbacks" class="nav-link">Register for DLL Load/Unload Callbacks</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#get-sandboxie-home-folder" class="nav-link">Get Sandboxie Home Folder</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+              </ul>
+            </li>
+        
+    
+        
+        </ul>
+    </div>
+</div>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../SBIE1101/">SBIE1101</a>
@@ -649,7 +763,8 @@
                 const WCHAR *box_name,      // pointer to WCHAR [34]
                 BOOLEAN all_sessions,
                 ULONG which_session,
-                ULONG *boxed_pids);         // pointer to ULONG [512]
+                ULONG *boxed_pids,         // pointer to ULONG []
+                ULONG *boxed_count);
 </code></pre>
 <ul>
 <li>Export Name:</li>
@@ -1070,6 +1185,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Privacy Mode - Sandboxie Documentation</title>
+    <title>Start Program - Sandboxie Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Privacy Mode";
-        var mkdocs_page_input_path = "Content\\PrivacyMode.md";
+        var mkdocs_page_name = "Start Program";
+        var mkdocs_page_input_path = "Content\\StartProgram.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -393,7 +393,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Privacy Mode</li>
+      <li class="breadcrumb-item active">Start Program</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -402,17 +402,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="privacy-mode">Privacy Mode</h1>
-<p><em>PrivacyMode</em> is a Box Type Preset introduced in v1.0.5 / 5.55.5. It can be selected from the Sandboxie Plus interface when creating a new sandbox or in the "General Options" of an existing one. This preset is labeled "with data protection".</p>
-<p>It is also a sandbox setting in <a href="../SandboxieIni/">Sandboxie Ini</a></p>
-<p>Usage:</p>
+                <h1 id="start-program">Start Program</h1>
+<p><em>StartProgram</em> is a sandbox setting in <a href="../SandboxieIni/">Sandboxie Ini</a>. It provides an automatic start for the specified program. For example:</p>
 <pre><code>   .
    .
    .
    [DefaultBox]
-   UsePrivacyMode=y
+   StartProgram=%ProgramFiles%\Google\Chrome\Application\chrome.exe
 </code></pre>
-<p>This mode makes all unsandboxed locations unreadable (except "C:\Windows" and "C:\Program Files"), hence denying programs access to any personal data. Also, the registry only allows reading parts of the local machine's root keys (HKLM) but not user root keys (HKCU). Exceptions can be specified in <a href="../ResourceAccess/">Resource Access</a>.</p>
+<p>The example specifies that Google Chrome (chrome.exe) will be forced to run sandboxed in the sandbox <em>DefaultBox</em>.</p>
+<p><strong>Technical Details</strong></p>
+<p><em>StartProgram</em> is processed by <a href="../ServicePrograms/#remote-procedure-call-rpc">SandboxieRpcSs</a>, which runs just once in every sandbox. Like the <a href="../AutoExec/">AutoExec</a> setting, it is processed when the first program begins to run in a sandbox. Note that <em>StartProgram</em> launches the specified application in hidden mode, if supported.</p>
+<p>For services, see <a href="../StartService/">StartService</a>.</p>
               
             </div>
           </div><footer>
@@ -421,6 +422,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

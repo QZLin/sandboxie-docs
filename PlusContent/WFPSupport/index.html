@@ -405,7 +405,7 @@
                 <h1 id="wfp-windows-filtering-platform-support">WFP (Windows Filtering Platform) support</h1>
 <p><strong>Sandboxie Plus v0.9.3</strong> introduced a unique approach to manage network connectivity by implementing not only a <strong>kernel mode</strong> (using a driver) "per box" firewall built on Windows Filtering Platform (WFP) but also a <strong>user mode</strong>, outbound rule-based packet filter.</p>
 <h3 id="wfp-implementation">WFP implementation</h3>
-<p>To enable WFP functionality, add <code>NetworkEnableWFP=y</code> to the [GlobalSettings] section of the configuration file <strong>Sandboxie.ini</strong> and <strong>reboot the machine or reload the driver</strong> for it to take effect. WFP filtering <strong>works for both inbound and outbound</strong> traffic.</p>
+<p>To enable WFP functionality, add <code>NetworkEnableWFP=y</code> to the [GlobalSettings] section of the configuration file <strong><a href="../../Content/SandboxieIni/">Sandboxie Ini</a></strong> and <strong>reboot the machine or reload the driver</strong> for it to take effect. WFP filtering <strong>works for both inbound and outbound</strong> traffic.</p>
 <ul>
 <li>To enable blocking globally, add <code>AllowNetworkAccess=n</code> to the [GlobalSettings] section.</li>
 <li>To enable WFP blocking for a box, such as DefaultBox, add <code>AllowNetworkAccess=n</code> to the [DefaultBox] section.</li>
@@ -467,6 +467,7 @@ If you set "block internet access" for a given process and have the driver (for 
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

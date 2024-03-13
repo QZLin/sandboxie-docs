@@ -431,6 +431,11 @@
 <p>Note that OpenWinClass=* allows full communication with all windows outside the sandbox, but may interfere with some drag-and-drop operations.</p>
 <p><strong>Identifying Window Class Names</strong></p>
 <p>The unsandboxed windows are identified by their <em>window class name</em>, which is an internal name given to the window by the application that created it. You can use a tool like <a href="https://www.catch22.net/software/winspy">WinSpy</a> to identify window class names. The <a href="../ResourceAccessMonitor/">Resource Access Monitor</a> tool in Sandboxie Classic and the <a href="../../PlusContent/TraceLog/">Trace Logging</a> tool in Sandboxie Plus also display window class names.</p>
+<p>Related Sandboxie Plus settings:</p>
+<p>Sandbox Options &gt; Resource Access &gt; Wnd &gt; Add Wnd Class &gt; Access column &gt; Open</p>
+<p>Sandbox Options &gt; Resource Access &gt; Wnd &gt; Add Wnd Class &gt; Access column &gt; Ignore UIPI</p>
+<p>Sandbox Options &gt; Resource Access &gt; Wnd &gt; Don't alter window class names created by sandboxed programs</p>
+<p>See also: <a href="../NoRenameWinClass/">No Rename Win Class</a>.</p>
               
             </div>
           </div><footer>
@@ -439,6 +444,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

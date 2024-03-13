@@ -437,7 +437,7 @@
 <p>You can also adjust the buffer size by adding <code>TraceBufferPages=2560</code> that will increase it tenfold.</p>
 <h3 id="review-the-trace-for-netfwtrace-ipctrace-and-pipetrace">Review the Trace for <strong>NetFwTrace</strong>, <strong>IpcTrace</strong> and <strong>PipeTrace</strong></h3>
 <p>Since version 0.9.0 / 5.51.0, a new option <code>NetFwTrace=*</code> was added to trace the actions of the firewall components. Please note that the driver only logs to the kernel debug output, which you can view with <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/debugview">DbgView.exe</a>.</p>
-<p>On Windows Vista and later, output from the system debugger log is disabled by default. <a href="https://web.archive.org/web/20080731211018/http://blogs.msdn.com:80/doronh/archive/2006/11/14/where-did-my-debug-output-go-in-vista.aspx">This blog post</a> and <a href="https://stackoverflow.com/questions/65015739/outputdebugstring-not-showing-message-in-debugview-windows-10-x64">this StackOverflow thread</a> explain how to enable it.</p>
+<p>On Windows Vista and later, output from the system debugger log is disabled by default. <a href="https://web.archive.org/web/20080731211018/http://blogs.msdn.com:80/doronh/archive/2006/11/14/where-did-my-debug-output-go-in-vista.aspx">This blog post</a> and <a href="https://web.archive.org/web/20230324011501/https://stackoverflow.com/questions/65015739/outputdebugstring-not-showing-message-in-debugview-windows-10-x64">this thread</a> explain how to enable it.</p>
 <p>The following trace will display output in the following format. (Assuming <strong>IpcTrace</strong>, and <strong>PipeTrace</strong> enabled.)</p>
 <pre><code>...
 (001404) SBIE (FA) 00120116.01.00000000 \Device\NamedPipe\ShimViewer
@@ -513,6 +513,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

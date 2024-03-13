@@ -71,25 +71,111 @@
                   <li class="toctree-l1"><a class="reference internal" href="../UsageTips/">Usage Tips</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Command Line Usage</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#start-programs">Start Programs</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#stop-programs">Stop Programs</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unmount-box-images">Unmount Box Images</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mount-box-images">Mount Box Images</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#list-programs">List Programs</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#delete-contents-of-sandbox">Delete Contents of Sandbox</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#reload-configuration">Reload Configuration</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#disable-forced-programs">Disable Forced Programs</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#related-reading-material">Related Reading Material</a>
-    </li>
+    <ul class="current"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        
+            
+        
+            <li class="nav-item" data-level="1"><a href="#start-command-line" class="nav-link">Start Command Line</a>
+              <ul class="nav flex-column">
+                
+        
+            <li class="nav-item" data-level="3"><a href="#start-programs" class="nav-link">Start Programs</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#stop-programs" class="nav-link">Stop Programs</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#unmount-box-images" class="nav-link">Unmount Box Images</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#mount-box-images" class="nav-link">Mount Box Images</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#list-programs" class="nav-link">List Programs</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#delete-contents-of-sandbox" class="nav-link">Delete Contents of Sandbox</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#reload-configuration" class="nav-link">Reload Configuration</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#disable-forced-programs" class="nav-link">Disable Forced Programs</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+        
+            <li class="nav-item" data-level="3"><a href="#related-reading-material" class="nav-link">Related Reading Material</a>
+              <ul class="nav flex-column">
+                
+              </ul>
+            </li>
+        
+    
+                
+              </ul>
+            </li>
+        
+    
+        
+        </ul>
+    </div>
+</div>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../SandboxieIni/">Sandboxie Ini</a>
@@ -451,10 +537,7 @@
 <p>In all forms, the parameter <em>/box:SandboxName</em> is applicable, and may be specified between Start.exe and the parameter, to indicate a sandbox name other than the default of <em>DefaultBox</em>. For example:</p>
 <pre><code>  &quot;C:\Program Files\Sandboxie\Start.exe&quot;  /box:TestBox  run_dialog
 </code></pre>
-<p>A special form of the /box parameter is <em>/box:</em><strong><em>ask</em></strong>__ and causes Start.exe to display the sandbox selection dialog box.</p>
-<p>The parameter <em>/nosbiectrl</em> can be used to make sure Start.exe does not try to run <a href="../SandboxieControl/">Sandboxie Control</a> before running the sandboxed program.</p>
-<pre><code>  &quot;C:\Program Files\Sandboxie\Start.exe&quot;  /nosbiectrl notepad.exe
-</code></pre>
+<p>A special form of the /box parameter is <em>/box:__ask__</em> and causes Start.exe to display the sandbox selection dialog box.</p>
 <p>The parameter <em>/silent</em> can be used to eliminate some pop-up error messages. For example:</p>
 <pre><code>  &quot;C:\Program Files\Sandboxie\Start.exe&quot;  /silent  no_such_program.exe
 </code></pre>
@@ -479,7 +562,7 @@
 </code></pre>
 <p>The system waits for Start.exe to finish, which in turn waits for "cmd /c exit 9" to finish, and then the exit status 9 is returned all the way back.</p>
 <p>Parameters can be combined in any order. For example:</p>
-<pre><code>   &quot;C:\Program Files\Sandboxie\Start.exe&quot;  /box:CustomBox /silent /nosbiectrl MyProgram.exe
+<pre><code>   &quot;C:\Program Files\Sandboxie\Start.exe&quot;  /box:CustomBox /silent MyProgram.exe
 </code></pre>
 <h3 id="stop-programs">Stop Programs</h3>
 <p>Terminate all programs running in a particular sandbox. Note that the request is transmitted to the Sandboxie service SbieSvc, which actually carries out the termination.</p>
@@ -491,13 +574,13 @@
 <p>The form <em>/terminate_all</em> terminates all programs in all sandboxes.</p>
 <hr />
 <h3 id="unmount-box-images">Unmount Box Images</h3>
-<p>These commands unmount encrypted box images or ram disks created by Sandboxie Plus. These parameters are available since v1.11.0 / 5.66.0.</p>
+<p>These commands unmount encrypted box images or RAM disks created by Sandboxie Plus. These parameters are available since v1.11.0 / 5.66.0.</p>
 <pre><code>  &quot;C:\Program Files\Sandboxie-Plus\Start.exe&quot;  /unmount
   &quot;C:\Program Files\Sandboxie-Plus\Start.exe&quot;  /box:EncryptedBox  /unmount
   &quot;C:\Program Files\Sandboxie-Plus\Start.exe&quot;  /unmount_all
 </code></pre>
 <p>If the parameter <em>/box:SandboxName</em> is omitted, default sandbox, <em>DefaultBox</em> image, will be unmounted.</p>
-<p>The form <em>/unmount_all</em> terminates all programs in all encrypted sandboxes and then unmounts all encrypted box images.</p>
+<p>The form <em>/unmount_all</em> terminates all programs in all encrypted sandboxes and unmounts all encrypted box images, including RAM disks created by Sandboxie Plus.</p>
 <h3 id="mount-box-images">Mount Box Images</h3>
 <p>These commands mount encrypted box images created by Sandboxie Plus. These parameters are available since v1.11.0 / 5.66.0.</p>
 <pre><code>  &quot;C:\Program Files\Sandboxie-Plus\Start.exe&quot;  /key:[box image password] /mount_protected
@@ -589,6 +672,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

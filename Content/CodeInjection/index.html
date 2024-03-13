@@ -413,7 +413,7 @@
 <p>The injection is done calling <code>_FX ULONG SbieDll_InjectLow(HANDLE hProcess, BOOLEAN is_wow64, BOOLEAN bHostInject, BOOLEAN dup_drv_handle)</code> and providing the required arguments, the function than:</p>
 <ul>
 <li>
-<p>Starts with preparing a data block <code>lowdata</code> of type <code>SBIELOW_DATA</code>, and filling in variouse values like is_wow64, bHostInject and others...</p>
+<p>Starts with preparing a data block <code>lowdata</code> of type <code>SBIELOW_DATA</code>, and filling in various values like is_wow64, bHostInject and others...</p>
 </li>
 <li>
 <p>Than it uses <code>SbieDll_InjectLow_CopyCode</code> to allocate <code>sizeof(shell_code) + sizeof(SBIELOW_J_TABLE) + 0x400</code> bytes of Memory in the target process and write the shell code to it. 
@@ -441,7 +441,7 @@ The data stored there a couple of offsets, as well as the full paths to the Sbie
 <p>Finally the <code>ntdll!LdrInitializeThunk</code> in the target process gets overwritten using <code>SbieDll_InjectLow_WriteJump</code> with a jump instruction into the shell code's entry point.</p>
 </li>
 </ul>
-<p>Now the process can be resumeed and the injected code will do its thing.</p>
+<p>Now the process can be resumed and the injected code will do its thing.</p>
 <p>An important note to make here is that this function does the same for native 64 bit and wow64 emulated 32 bit processes, 
 in fact, on a 64-bit system the injected shell code is always 64 bit. Only much later in the initialization of the process running under wow64 it switches to 32-bit.</p>
 <h2 id="shell-code-lowleveldll-operation">Shell Code (LowLevel.dll) operation</h2>
@@ -451,8 +451,8 @@ The initial entry point <code>_Start</code> retrieves the current address and ca
 <h5 id="initinject">InitInject</h5>
 <p>The <code>InitInject</code> function checks if the process is running natively (i.e. 32-bit on a x86 system or 64-bit in a x64 system), or if it's running under wow64 (that is a 32-bit process on a 64-bit system) and selects either the native ntdll base address or the one of the wow64 ntdll. On Windows versions prior to 8, that address was located in <code>KUSER_SHARED_DATA::Wow64SharedInformation</code> structure, but not on later versions. Sandboxie used the driver to record the address of the wow64 ntdll during image loading and <code>InitInject</code> queried the driver for it. Since version 5.44, however, it's driver independent, the loader code uses <code>NtQueryVirtualMemory</code> to find the image base address and saves it into the <code>ntdll_wow64_base</code> field of the data block.</p>
 <p>At this point the top portion of the <code>data-&gt;syscall_data</code> before the <code>SBIELOW_EXTRA_DATA</code> region is no longer required and is repurposed to store temporary data of the type <code>INJECT_DATA</code>.</p>
-<p>The function than finds the addresses of <code>LdrLoadDll</code>, <code>LdrGetProcedureAddress</code>, <code>NtRaiseHardError</code> and <code>RtlFindActivationContextSectionString</code> using a custom <code>FindDllExport</code> lookup function by parsing through the previously selected ntdll image, these addresses are stored into the <code>INJECT_DATA</code> region, then a couple values from the <code>SBIELOW_EXTRA_DATA</code> are also copied into that region, containing paths to the SbieDll.dll (booth 32 and 64 bit paths), as well as the name of kernel32.dll.</p>
-<p>On 64-bit systems the function distinguishes between the native and the wow64 execution, in the latter case branching of to <code>InitInjectWow64</code>.
+<p>The function than finds the addresses of <code>LdrLoadDll</code>, <code>LdrGetProcedureAddress</code>, <code>NtRaiseHardError</code> and <code>RtlFindActivationContextSectionString</code> using a custom <code>FindDllExport</code> lookup function by parsing through the previously selected ntdll image, these addresses are stored into the <code>INJECT_DATA</code> region, then a couple values from the <code>SBIELOW_EXTRA_DATA</code> are also copied into that region, containing paths to the SbieDll.dll (both 32 and 64 bit paths), as well as the name of kernel32.dll.</p>
+<p>On 64-bit systems the function distinguishes between the native and the wow64 execution, in the latter case branching off to <code>InitInjectWow64</code>.
 In the native case it continues with hooking the <code>RtlFindActivationContextSectionString</code> function in the ntdll.dll. 
 * An original copy of the functions begin is first saved to the <code>INJECT_DATA</code> structure 
 * The address of the structure is written into the detour function which is implemented in assembler. 
@@ -480,6 +480,7 @@ Those are implemented in assembler, they pass a pointer to the return address lo
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

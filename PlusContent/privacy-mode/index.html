@@ -407,7 +407,7 @@
 <p>The concept of privacy mode and privacy enhanced (or Data Protection) boxes was introduced in <strong>Sandboxie Plus v1.0.0</strong>.
 In this mode, most of the locations on a PC are set to be treated like a Write[File/Key]Path, which means the sandboxed locations are writable, but the unsandboxed locations are not readable.
 In addition, the registry does not allow reading of user root keys. In other words, even though sandboxed processes can continue to work, they cannot access private user data.</p>
-<p>The setting for a privacy enhanced box can be enabled by adding <code>UsePrivacyMode=y</code> to the box settings section of <strong>Sandboxie.ini</strong>. It can also be enabled in the Sandman UI. Right-click on a box and select "Sandbox Options" from the drop-down menu (or simply double-click on a box) to bring up the Box Options UI. Select the Box Type Preset as "Sandbox with Data Protection" (with a <strong>blue</strong> box icon) and click OK to apply changes. The status column of Sandman UI labels this box as <strong>Privacy Enhanced</strong>.</p>
+<p>The setting for a privacy enhanced box can be enabled by adding <code>UsePrivacyMode=y</code> to the box settings section of <strong><a href="../../Content/SandboxieIni/">Sandboxie Ini</a></strong>. It can also be enabled in the Sandman UI. Right-click on a box and select "Sandbox Options" from the drop-down menu (or simply double-click on a box) to bring up the Box Options UI. Select the box type preset as "Sandbox with Data Protection" (with a <strong>blue</strong> box icon) and click OK to apply changes. The status column of Sandman UI labels this box as <strong>Privacy Enhanced</strong>.</p>
 <p><img alt="" src="../../Media/Box_PrivacyMode.png" /></p>
 <p><strong>What is User Space?</strong> AppGuard refers to <a href="https://malwaretips.com/threads/run-by-smartscreen-utility.65145/post-561364">user space</a> as "computer storage space that is typically accessible by non-admin Windows users. It contains the user's profile directory (which includes the My Documents folder and Desktop), removable storage devices, network shares, and all non-system hard drives such as additional external and internal disk drives." Think of "user space" as everything outside the <strong>system</strong> (where the core operating system and programs live), in other words, outside the <code>C:\Windows</code>, <code>C:\Program Files</code>, and <code>C:\Program Files (x86)</code> folders!</p>
 <p>Internally, a privacy enhanced box is based on three defaults:
@@ -415,6 +415,7 @@ In addition, the registry does not allow reading of user root keys. In other wor
 - <code>C:\Windows</code>
 - <code>C:\Program Files</code>
 - <code>C:\Program Files (x86)</code>
+- <code>C:\ProgramData\Microsoft</code> (since <strong>Sandboxie Plus v1.12.7</strong>)
 - Registry resources under HKLM (but not HKCU) are readable and can be sandboxed.
 - <strong>Note:</strong> The read access provides a good balance between privacy and convenience. One could, of course, drill down to identify selected system resources that may leak private data and further restrict them (using <code>Write[File/Key]Path</code>) if desired.</p>
 <ol>
@@ -436,6 +437,7 @@ In addition, the registry does not allow reading of user root keys. In other wor
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>sandboxie-docs is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you want to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs/edit/main/README.md">Improve this page!</a></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
