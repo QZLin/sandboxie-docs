@@ -1,0 +1,33 @@
+name: Publish
+permissions:
+  contents: write
+  deployments: write
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+    # paths:
+    # - docs/**
+    # - custom_theme
+    # - README.md
+    # - requirements.txt
+    
+
+jobs:
+  pages:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4.1.1
+    - name: Setup Python
+      uses: actions/setup-python@v5.1.0
+      with:
+        python-version: '3.12'
+    - name: Setup Dependencies
+      run: pip install -r requirements.txt
+    - name: Build & Publish
+      run: python -m mkdocs gh-deploy
+    - uses: actions/upload-artifact@v4.3.1
+      with:
+        path: './website'
+
