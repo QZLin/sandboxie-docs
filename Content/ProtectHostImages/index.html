@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Configuration Protection - Sandboxie Documentation</title>
+    <title>Protect Host Images - Sandboxie Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Configuration Protection";
-        var mkdocs_page_input_path = "Content/ConfigurationProtection.md";
+        var mkdocs_page_name = "Protect Host Images";
+        var mkdocs_page_input_path = "Content/ProtectHostImages.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -873,7 +873,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Configuration Protection</li>
+      <li class="breadcrumb-item active">Protect Host Images</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -882,24 +882,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="configuration-protection">Configuration Protection</h1>
-<p>Initially, anyone using <a href="../SandboxieControl/">Sandboxie Control</a> or the <a href="../PlusMigrationGuide/">Sandman</a> UI can change any aspect of the Sandboxie configuration, which is stored in the <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file. Additionally, anyone with access to the configuration text file can also manipulate the configuration and reload it into Sandboxie.</p>
-<p>It is possible to activate protection of <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file from unauthorized changes. Sandboxie offers four modes of protection:</p>
-<ul>
-<li>Only Administrator user accounts can make changes (See also: <a href="../EditAdminOnly/">EditAdminOnly</a>.)</li>
-<li>Password must be entered in order to make changes (See also: <a href="../EditPassword/">EditPassword</a>.)</li>
-<li>Only Administrator user accounts can use Pause Forcing Programs command (See also: <a href="../ForceDisableAdminOnly/">ForceDisableAdminOnly</a>.)</li>
-<li>Clear password when main window becomes hidden (See also: ForgetPassword.)</li>
-</ul>
-<p>All modes can be active at the same time.</p>
-<p>The protection applies to the <strong>Global Settings</strong>, <strong>Sandbox Settings</strong> and <strong>Template Settings</strong> sections of the <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file. It does not apply to any <strong>User Settings</strong> sections, which store per-user preferences.</p>
-<p>To activate the protection in <a href="../SandboxieControl/">Sandboxie Control</a>, use the <a href="../ConfigureMenu/#lock-configuration">Configure menu &gt; Lock Configuration</a> command.</p>
-<p>To activate the protection in <a href="../PlusMigrationGuide/">Sandman</a>, use the Options menu &gt; Global Settings &gt; Advanced Config &gt; Sandboxie.ini Presets &gt; Config Protection command.</p>
-<hr />
-<p>To prevent circumvention of the protection, please consider the following points:</p>
-<p><strong>Placement of the configuration file:</strong> As discussed in the <a href="../SandboxieIni/">Sandboxie Ini</a> page, Sandboxie looks for its configuration file in the Windows folder first, and in the Sandboxie installation folder second. The protection should be applied to a configuration file that is located in the Windows folder.</p>
-<p>If the protection is applied to the configuration file in the Sandboxie installation folder, an attacker might create an empty configuration file in the Windows folder. This will effectively deactivate the protection the next time Sandboxie reads its configuration. This would happen because Sandboxie would switch to using the new empty configuration file, for which protection is not activated.</p>
-<p><strong>Access to the configuration file:</strong> Adjust the permissions on the <a href="../SandboxieIni/">Sandboxie Ini</a> configuration file to allow write access only to the SYSTEM account. Any other user account must still be able to read the configuration, so read access should be allowed to the user group <strong>Authenticated Users</strong> or <strong>Everyone</strong>.</p>
+                <h1 id="protect-host-images">Protect Host Images</h1>
+<p><em>ProtectHostImages</em> is a sandbox setting in <a href="../SandboxieIni/">Sandboxie Ini</a> available since v1.9.0 / 5.64.0. This setting can be enabled to prevent processes located outside the sandbox from loading boxed DLLs.  </p>
+<pre><code>   .
+   .
+   .
+   [DefaultBox]
+   ProtectHostImages=y
+</code></pre>
+<p>Related Sandboxie Plus setting: Sandbox Options &gt; Various Options &gt; Dlls &amp; Extensions &gt; Prevent sandboxed programs installed on host from loading DLLs from the sandbox</p>
               
             </div>
           </div><footer>
