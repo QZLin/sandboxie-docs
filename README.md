@@ -10,7 +10,7 @@ After Sandboxie became [open source](https://news.sophos.com/en-us/2020/04/09/sa
 
 ## Documentation Index
 
-[All Pages](docs/Content/AllPages.md)
+[All pages](docs/Content/AllPages.md)
 
 ## Get Sandboxie
 
