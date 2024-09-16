@@ -17,8 +17,6 @@ watch:
 - custom_theme
 copyright: 'This site is maintained by <a href="https://github.com/sandboxie-plus">sandboxie-plus</a>. If you wish to contribute: <a href="https://github.com/sandboxie-plus/sandboxie-docs">Improve sandboxie-docs!</a>'
 nav:
-- Index:
-  - Content/AllPages.md
 - Sandboxie Basics:
   - Content/HelpTopics.md
   - Content/GettingStarted.md
@@ -182,3 +180,5 @@ nav:
     - Content/SBIE9304.md
     - Content/SBIE9305.md
 - Content/TechnicalAspects.md
+- Index:
+  - Content/AllPages.md
