@@ -19,15 +19,16 @@ copyright: 'This site is maintained by <a href="https://github.com/sandboxie-plu
 nav:
 - Sandboxie Basics:
   - Content/HelpTopics.md
-  - Content/GettingStarted.md
-  - Sandboxie Control:
-    - Content/SandboxieControl.md
-    - Content/FileMenu.md
-    - Content/ViewMenu.md
-    - Content/SandboxMenu.md
-    - Content/ConfigureMenu.md
-    - Content/HelpMenu.md
-    - Content/TrayIconMenu.md
+  - Getting Started:
+    - Content/GettingStarted.md
+    - Sandboxie Control:
+      - Content/SandboxieControl.md
+      - Content/FileMenu.md
+      - Content/ViewMenu.md
+      - Content/SandboxMenu.md
+      - Content/ConfigureMenu.md
+      - Content/HelpMenu.md
+      - Content/TrayIconMenu.md
   - Content/UsageTips.md
   - Command Line Usage: Content/StartCommandLine.md
   - Content/SandboxieIni.md
