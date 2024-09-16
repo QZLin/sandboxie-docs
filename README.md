@@ -1,4 +1,4 @@
-# Sandboxie documentation
+# Sandboxie Documentation
 
 [![Markdown links Status](https://github.com/sandboxie-plus/sandboxie-docs/actions/workflows/action.yml/badge.svg)](https://github.com/sandboxie-plus/sandboxie-docs/actions/workflows/action.yml) [![Codespell Status](https://github.com/sandboxie-plus/sandboxie-docs/actions/workflows/codespell.yml/badge.svg)](https://github.com/sandboxie-plus/sandboxie-docs/actions/workflows/codespell.yml) [![Join our Discord Server](https://img.shields.io/badge/Join-Our%20Discord%20Server%20for%20bugs,%20feedback%20and%20more!-blue?style=flat&logo=discord)](https://discord.gg/S4tFu6Enne)
 
@@ -8,7 +8,7 @@ Sandboxie is a sandbox-based isolation software for Windows that lets you try an
 
 After Sandboxie became [open source](https://news.sophos.com/en-us/2020/04/09/sandboxie-is-now-an-open-source-tool/), it was decided to release the documentation, so that it would be accessible and easily updated by the community, as opposed to the dated documentation available at [sandboxie-plus.com](https://sandboxie-plus.com) and other archived sources.
 
-## Documentation index
+## Documentation Index
 
 [All pages](docs/Content/AllPages.md)
 
