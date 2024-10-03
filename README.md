@@ -6,7 +6,7 @@
 
 Sandboxie is a sandbox-based isolation software for Windows that lets you try and run untrusted applications without worrying about unwanted changes to your files or registry.
 
-After Sandboxie became [open source](https://news.sophos.com/en-us/2020/04/09/sandboxie-is-now-an-open-source-tool/), it was decided to release the documentation so that it would be easily updated by the community, as opposed to the limited documentation available at [sandboxie-plus.com](https://sandboxie-plus.com) and other archived sources.
+After Sandboxie became [open source](https://news.sophos.com/en-us/2020/04/09/sandboxie-is-now-an-open-source-tool/), it was decided to release the documentation so that it would be easily updated by the community, as opposed to the limited documentation available at [sandboxie-plus.com](https://sandboxie-plus.com) and other sources.
 
 ## Documentation Index
 
